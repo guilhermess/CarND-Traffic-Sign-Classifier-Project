@@ -19071,8 +19071,9 @@ Image 5 above partially contains another traffic sign. Other than that one would
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-The model was able to correctly predict all images that were part of the training set: 7 out of 10.
-Three of the images were not part of the training and therefore could not correctly labeled.</p>
+The model was able to correctly predict all images that were part of the training set: 7 out of 10, i.e. 70% accuracy. Three of the images were not part of the training and therefore could not correctly labeled.</p>
+<p>Compared to the original test set (where we he have 98.89% accuracy) this is surely a significant difference.
+This can be explained by the fact that the mislabeled images were not part of the training set, and therefore it would not be possible for this model to correctly classify them. The solution would be to add several instances of those signs to the training set together with the corresponding label, and update the model.</p>
 
 </div>
 </div>
